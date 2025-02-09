@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="en">
+            <head>
+               <meta charset="utf-8"/>
+               <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+               <title>Car Rentals Landing Page</title>
+               <script src="https://cdn.tailwindcss.com"></script>
+               <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+               <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+               <link href="R2.css" rel="stylesheet">
+           </head>
+
+<body class="font-roboto bg-gray-100">
+    <!-- Navigation Bar -->
+        <nav class="bg-gray-800 text-white p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                        <a class="text-2xl font-bold" href="#">Car Rentals</a>
+              <div class="md:hidden">
+                        <button class="text-white focus:outline-none" id="menu-toggle">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+             </div>
+
+       <div class="hidden md:flex space-x-4 menu-hidden" id="menu">
+                <a class="hover:text-blue-400" href="#">Home</a>
+                <a class="hover:text-blue-400" href="#booking">Book Now</a>
+                <a class="hover:text-blue-400" href="#featured">Featured</a>
+                <a class="hover:text-blue-400" href="#why-choose-us">Why Choose Us</a>
+                <a class="hover:text-blue-400" href="#reviews">Reviews</a>
+      </div>
+             </div>
+
+   <div class="md:hidden menu-hidden" id="mobile-menu">
+              <a class="block py-2 px-4 hover:bg-gray-700" href="#">Home</a>
+              <a class="block py-2 px-4 hover:bg-gray-700" href="#booking">Book Now</a>
+              <a class="block py-2 px-4 hover:bg-gray-700" href="#featured">Featured</a>
+              <a class="block py-2 px-4 hover:bg-gray-700" href="#why-choose-us">Why Choose Us</a>
+              <a class="block py-2 px-4 hover:bg-gray-700" href="#reviews">Reviews</a>
+   </div>
+      </nav>
+
+    <!-- Hero Section -->
+  <section class="relative bg-gray-800 text-white">
+             <img class="w-full h-full object-cover opacity-50" height="800" src="CAR-RENTALS-1.png" width="1920"/>
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+             <h1 class="text-4xl md:text-6xl font-bold mb-4">Find Your Perfect Rental Car</h1>
+             <p class="text-lg md:text-2xl mb-8">Affordable, Flexible, and Convenient</p>
+             <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#booking">Book Now</a>
+  </div>
+  </section>
+
+  <!-- Search & Booking Form -->
+  <section class="py-12 bg-white" id="booking">
+           <div class="container mx-auto px-4">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-6">Search &amp; Book Your Car</h2>
+                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700" for="vehicle-type">Vehicle Type</label>
+                        <select class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="vehicle-type">
+                        <option>SUV</option>
+                        <option>Van</option>
+                        <option>Truck</option>
+                        <option>Motorcycle</option>
+                        <option>Sports Car</option>
+ </select>
+                    </div>
+      <div>
+                    <label class="block text-sm font-medium text-gray-700" for="rental-duration">Rental Duration</label>
+                    <input class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="rental-duration" placeholder="e.g., 3 days" type="text"/>
+      </div>
+      <div>
+                    <label class="block text-sm font-medium text-gray-700" for="location">Location</label>
+                    <input class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="location" placeholder="e.g., New York" type="text"/>
+      </div>
+
+      <div class="md:col-span-3 text-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Search</button>
+      </div>
+            </form>
+      </div>
+      </div>
+  </section>
+
+  <!-- Featured Vehicles Section -->
+  <section class="py-12 bg-gray-100" id="featured">
+            <div class="container mx-auto px-4">
+                   <h2 class="text-3xl font-bold text-center mb-8">Featured Vehicles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                   <img class="w-full h-48 object-cover rounded-t-lg" height="300" src="CAR-RENTALS-2.png" width="400"/>
+           <div class="mt-4">
+                  <h3 class="text-xl font-bold"> Luxury SUV</h3>
+                        <p class="text-gray-600">$80/day</p>
+                        <p class="mt-2">Comfortable and spacious, perfect for family trips.</p>
+           </div>
+           </div>
+
+<div class="bg-white p-6 rounded-lg shadow-lg">
+               <img class="w-full h-48 object-cover rounded-t-lg" height="300" src="CAR-RENTALS-3.png" width="400"/>
+               <div class="mt-4">
+               <h3 class="text-xl font-bold">Sports Car</h3>
+               <p class="text-gray-600">$150/day</p>
+               <p class="mt-2">Experience the thrill of driving a high-performance car.</p>
+               </div>
+</div>
+
+     
+<div class="bg-white p-6 rounded-lg shadow-lg">
+             <img class="w-full h-48 object-cover rounded-t-lg" height="300" src="CAR-RENTALS-4.png" width="400"/>
+
+            <div class="mt-4">
+                 <h3 class="text-xl font-bold">Reliable Truck</h3>
+                 <p class="text-gray-600">$70/day</p>
+                 <p class="mt-2">Perfect for moving and transporting goods.</p>
+           </div>
+</div>
+         </div>
+         </div>
+   </section>
+
+  <!-- Why Choose Us Section -->
+<section class="py-12 bg-white" id="why-choose-us">
+            <div class="container mx-auto px-4">
+                   <h2 class="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                   <div class="text-center">
+                   <i class="fas fa-dollar-sign text-4xl text-blue-600 mb-4"></i>
+                   <h3 class="text-xl font-bold">Affordable Prices</h3>
+                   <p class="mt-2">We offer competitive pricing on all our rental vehicles.</p>
+                   </div>
+
+<div class="text-center">
+                  <i class="fas fa-calendar-alt text-4xl text-blue-600 mb-4"></i>
+                  <h3 class="text-xl font-bold">Flexible Plans</h3>
+                  <p class="mt-2">Choose from a variety of rental plans to suit your needs.</p>
+</div>
+
+<div class="text-center">
+                <i class="fas fa-headset text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-bold">24/7 Support</h3>
+                <p class="mt-2">Our customer support team is here to help you anytime.</p>
+</div>
+          </div>
+          </div>
+</section>
+
+<!-- Customer Reviews Section -->
+     <section class="py-12 bg-gray-100" id="reviews">
+              <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-gray-600 mb-4">"The best car rental experience I've ever had. The car was in perfect condition and the service was excellent!"</p>
+    <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-4" height="50" src="PERSON-1.png" width="50"/>
+             <div><h4 class="text-lg font-bold">John Doe</h4><p class="text-gray-600"> New York, NY</p></div>
+    </div>
+              </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-gray-600 mb-4">"Affordable prices and great customer service. I will definitely rent from them again."</p>
+    <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-4" height="50" src="PERSON-3.png" width="50"/>
+              <div><h4 class="text-lg font-bold">Jane Smith</h4><p class="text-gray-600">Los Angeles, CA</p></div>
+    </div>
+    </div>
+
+<div class="bg-white p-6 rounded-lg shadow-lg">
+             <p class="text-gray-600 mb-4">"I rented a sports car for the weekend and it was an amazing experience. Highly recommend!"</p>
+<div class="flex items-center">
+             <img class="w-12 h-12 rounded-full mr-4" height="50" src="PERSON-2.png" width="50"/>
+             <div><h4 class="text-lg font-bold">Michael Johnson</h4><p class="text-gray-600">Miami, FL</p></div>
+</div>
+</div>
+    </div>
+            </div>
+</section>
+
+  
+<!-- Call to Action Section -->
+     <section class="py-12 bg-blue-600 text-white text-center">
+            <div class="container mx-auto px-4">
+                 <h2 class="text-3xl font-bold mb-4">Ready to Book Your Car?</h2>
+                 <p class="text-lg mb-8">Choose from a wide range of vehicles and enjoy a seamless rental experience.</p>
+                 <a class="bg-white text-blue-600 font-bold py-2 px-4 rounded" href="#booking">Book Now</a>
+           </div>
+     </section>
+  <script src="R3.js"></script>
+ </body>
+</html>
+
+
+
+
